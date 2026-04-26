@@ -1,0 +1,38 @@
+body {
+    color: #d7cfcf;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(42, 43, 62);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px;
+    display: flex;
+    background-color: rgb(12, 17, 26);
+    flex: 1;
+}
+
+.content ul {
+    width: 100%;
+}
+
+.content li {
+    background-color: red;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(42, 43, 62);
+}
