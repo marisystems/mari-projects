@@ -14,19 +14,36 @@ header {
 
 .content {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-
     padding: 40px;
     display: flex;
     background-color: rgb(12, 17, 26);
     flex: 1;
 }
 
+.item {
+    justify-content: space-around;
+    background-color: rgb(32, 32, 48);
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 10px 10px 5px 5px;
+}
+
+
 .content ul {
-    width: 100%;
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
 }
 
 .content li {
+    width: 100%;
+    flex-shrink: 0;
+    max-width: 250px;
+    height: 150px;
     background-color: red;
 }
 
