@@ -20,11 +20,6 @@ h1 {
     letter-spacing: 0.2rem;
 }
 
-h1:hover {
-    content: 'a';
-    background-color: red;
-}
-
 .container {
     display: flex;
     justify-content: s;
