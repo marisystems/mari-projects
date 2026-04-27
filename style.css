@@ -43,7 +43,7 @@ h1:hover {
     flex-shrink: 0;
     background-color: #151414;
     width: clamp(100px, 20vw, 200px);
-    height: 130px;
+    height: clamp(100px, 30vh, 200px);
     border-radius: 10px 10px 5px 5px;
     color: #eae4e4;
     padding: 20px;
@@ -54,3 +54,7 @@ h1:hover {
     transform: scale(1.1);
 }
 
+#info {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
