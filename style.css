@@ -14,18 +14,23 @@ body {
 
 a {
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
+    font-size: clamp(2rem, 8vw, 3.5rem);
     letter-spacing: 0.2rem;
 }
 
 .container {
     display: flex;
-    justify-content: s;
     gap: 10px;
     flex-wrap: wrap;
     margin: 20px;
+    flex: 1;
+    margin-top: 50px;
+    align-content: start;
 }
 
 .item {
@@ -45,6 +50,10 @@ h1 {
     transition: all 0.5s;
 }
 
+.item img {
+    max-width: 200px;
+}
+
 .item:hover {  
     transform: scale(1.1);
 }
@@ -53,3 +62,10 @@ h1 {
     font-size: 0.8rem;
     opacity: 0.5;
 }
+
+
+footer {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
