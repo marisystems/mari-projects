@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+:focus {
+    outline: 2px solid black;
+    border-radius: 5px;
+}
+
 .container  :focus {
     outline: none;
     border: 5px solid rgb(21, 20, 20);
@@ -82,17 +87,12 @@ h1 {
     transform: scale(1.1);
 }
 
-#info {
-    font-size: 0.8rem;
-    opacity: 0.5;
-}
-
-
 footer {
     display: flex;
     gap: 20px;
     font-size: 0.8rem;
     opacity: 0.5;
+    padding: 10px;  
 }
 
 #underline {
@@ -115,6 +115,40 @@ footer {
     color: white;
 }
 
+#open-modal {
+    transition: all 0.2s;
+}
+
 #open-modal:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+}
+
+#modal {
+    padding: 2rem;
+}
+
+#modal p {
+    max-width: 40ch;
+}
+
+#modal::backdrop {
+    background: #1d1d1d9f;
+}
+
+.btn {
+    background: #000;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#tip {
+    background: #434141;
+    margin: 15px 0px;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 20px;
+    text-align: center;
 }
