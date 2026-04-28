@@ -34,6 +34,11 @@ button {
     background: none;
 }
 
+::selection {
+    background-color: rgb(46, 45, 45);
+    color: white
+}
+
 a {
     text-decoration: none;
     color: inherit;
