@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-:focus {
+.container  :focus {
     outline: none;
     border: 5px solid rgb(21, 20, 20);
     border-radius: 10px 10px 5px 5px;
@@ -17,6 +17,16 @@ body {
     align-items: center;
     min-height: 100vh;
     padding-top: 100px;;
+}
+
+header {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    border: none;
+    background: none;
 }
 
 a {
@@ -38,7 +48,7 @@ li {
 }
 
 h1 {
-    font-size: clamp(2rem, 8vw, 3.5rem);
+    font-size: clamp(2rem, 8vw, 2.7rem);
     letter-spacing: 0.2rem;
 }
 
@@ -60,21 +70,12 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 1.5rem;
-    flex-grow: 0;
-    flex-shrink: 0;
     background-color: #151414;
-    width: clamp(100px, 20vw, 200px);
+    width: clamp(100px, 20vw, 120px);
     height: clamp(100px, 30vh, 200px);
     border-radius: 10px 10px 5px 5px;
-    color: #eae4e4;
     padding: 20px;
-    transition: all 0.5s;
-}
-
-.item img {
-    max-width: 200px;
+    transition: all 0.2s;
 }
 
 .item:hover {  
@@ -112,4 +113,8 @@ footer {
     transform: scale(1.1);
     background-color: rgb(54, 51, 51);
     color: white;
+}
+
+#open-modal:hover {
+    transform: scale(1.1);
 }
