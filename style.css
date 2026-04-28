@@ -111,7 +111,7 @@ footer {
 
 .popout:hover {
     transform: scale(1.1);
-    background-color: rgb(54, 51, 51);
+    background-color: rgb(51, 54, 52);
     color: white;
 }
 
@@ -125,6 +125,19 @@ footer {
 
 #modal {
     padding: 2rem;
+    border: none;
+    opacity: 0;
+    transition: all 0.3s allow-discrete;
+}
+
+#modal[open] {
+    opacity: 1;
+}
+
+@starting-style {
+    #modal[open] {
+        opacity: 0;
+    }
 }
 
 #modal p {
