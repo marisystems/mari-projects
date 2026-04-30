@@ -130,13 +130,25 @@ footer {
 
 #modal {
     padding: 2rem;
+    padding-top: 0px;
     border: none;
     opacity: 0;
     transition: all 0.3s allow-discrete;
+    gap: 20px;
 }
 
 #modal[open] {
+    display: flex;
+    flex-direction: column;
     opacity: 1;
+}
+
+#modal .inline {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+
 }
 
 @starting-style {
@@ -154,7 +166,7 @@ footer {
 }
 
 .btn {
-    background: #000;
+    background: #252323;
     color: white;
     border-radius: 5px;
     padding: 0.5rem 1rem;
